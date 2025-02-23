@@ -4072,5 +4072,17 @@
     /* hide behavior */
     display: none;
   }
+/* Override hover/focus/active styles for the button */
+.hovereffect.btn.btn-primary:hover,
+.hovereffect.btn.btn-primary:focus,
+.hovereffect.btn.btn-primary:active {
+  background-color: #004d00 !important;  /* Darker green (adjust as desired) */
+  color: #ffffff !important;             /* White text */
+  border-color: #004d00 !important;
+}
+
+/* If your interactive .grow element is interfering, you can reset its background */
+.hovereffect.btn.btn-primary:hover > .grow {
+  background-color: transparent !important;
 }
 
