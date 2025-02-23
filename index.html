@@ -1,16 +1,11 @@
-<head>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/Pnsdgrrvh/Minecraft-website-button-/refs/heads/main/css/main.css" type="text/css">
-    <link rel="stylesheet" href="chttps://raw.githubusercontent.com/Pnsdgrrvh/Minecraft-website-button-/refs/heads/main/css/components.css" type="text/css">
-</head>
+<link rel="stylesheet" href="https://raw.githubusercontent.com/Pnsdgrrvh/Minecraft-website-button-/refs/heads/main/css/main.css" type="text/css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/Pnsdgrrvh/Minecraft-website-button-/refs/heads/main/css/components.css" type="text/css">  
+</div>  
 <div class="get-item">  
-    <a ng-click="redirectToPDP($event, productInfo.title[localeCase] || productInfo.title.neutral, productInfo, getDiscountedPriceHero(productInfo, true))"
-   class="hovereffect d-md-inline-flex btn btn-primary text-small"
-   href="https://example.com"
-   aria-label="GET THIS ITEM"
-   target="_blank"
-   rel="noopener noreferrer">
-   <span class="grow"></span>GET THIS ITEM
-</a>  
+    <div ng-click="redirectToPDP($event,productInfo.title[localeCase] == null ? productInfo.title.neutral: productInfo.title[localeCase],productInfo,getDiscountedPriceHero(productInfo,true))">  
+        <a class="hovereffect d-md-inline-flex btn btn-primary text-small" href="https://example.com" aria-label="GET THIS ITEM" target="_blank" rel="noopener noreferrer">  
+            <span class="grow"></span>GET THIS ITEM  
+        </a>  
     </div>  
 </div>  
 <div class="ctaclass"></div>  
